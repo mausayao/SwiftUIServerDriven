@@ -8,8 +8,19 @@
 import Foundation
 
 struct Constants {
-    struct Urls {
-        static let baseUrl = "http://localhost:3000"
-        static let petListing = "\(baseUrl)/pet-listing"
+    
+    struct ScreenResources {
+        static let baseUrl = "localhost:3000"
+        static let petListing = "pet-listing"
+        
+        static func resource(for resourceName: String) -> URL? {
+            var component = URLComponents()
+            
+            component.scheme = "http"
+            component.encodedHost = baseUrl
+            component.path = "/\(resourceName)"
+            
+            return component.url
+        }
     }
 }
