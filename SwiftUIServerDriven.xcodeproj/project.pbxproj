@@ -11,6 +11,7 @@
 		B00CBAD72BD9DFCF006309F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00CBAD62BD9DFCF006309F9 /* ContentView.swift */; };
 		B00CBAD92BD9DFD0006309F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00CBAD82BD9DFD0006309F9 /* Assets.xcassets */; };
 		B00CBADC2BD9DFD0006309F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00CBADB2BD9DFD0006309F9 /* Preview Assets.xcassets */; };
+		B016A48D2BE2844400BDEC40 /* pet-listing.json in Resources */ = {isa = PBXBuildFile; fileRef = B084B31E2BE1C08B00ADAF9D /* pet-listing.json */; };
 		B03BBE602BDC82F100333ACE /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03BBE5F2BDC82F100333ACE /* WebService.swift */; };
 		B03BBE632BDC833200333ACE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03BBE622BDC833200333ACE /* Constants.swift */; };
 		B03BBE662BDC8A4400333ACE /* ScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03BBE652BDC8A4400333ACE /* ScreenModel.swift */; };
@@ -22,6 +23,7 @@
 		B084B31C2BE11C4B00ADAF9D /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B084B31B2BE11C4B00ADAF9D /* Dictionary+Extensions.swift */; };
 		B084B3202BE1C13C00ADAF9D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B084B31F2BE1C13C00ADAF9D /* NetworkService.swift */; };
 		B084B3222BE1C17A00ADAF9D /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B084B3212BE1C17A00ADAF9D /* LocalService.swift */; };
+		B084B3242BE27B2000ADAF9D /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B084B3232BE27B2000ADAF9D /* JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,7 @@
 		B084B31E2BE1C08B00ADAF9D /* pet-listing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "pet-listing.json"; sourceTree = "<group>"; };
 		B084B31F2BE1C13C00ADAF9D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B084B3212BE1C17A00ADAF9D /* LocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
+		B084B3232BE27B2000ADAF9D /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,7 @@
 			children = (
 				B03BBE652BDC8A4400333ACE /* ScreenModel.swift */,
 				B084B3132BE0860600ADAF9D /* FeaturedImageUIModel.swift */,
+				B084B3232BE27B2000ADAF9D /* JSON.swift */,
 			);
 			path = UIModels;
 			sourceTree = "<group>";
@@ -217,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B00CBADC2BD9DFD0006309F9 /* Preview Assets.xcassets in Resources */,
+				B016A48D2BE2844400BDEC40 /* pet-listing.json in Resources */,
 				B00CBAD92BD9DFD0006309F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B084B3222BE1C17A00ADAF9D /* LocalService.swift in Sources */,
+				B084B3242BE27B2000ADAF9D /* JSON.swift in Sources */,
 				B03BBE602BDC82F100333ACE /* WebService.swift in Sources */,
 				B084B3172BE0877C00ADAF9D /* View+Extensions.swift in Sources */,
 				B084B3102BE0840B00ADAF9D /* UIComponent.swift in Sources */,
