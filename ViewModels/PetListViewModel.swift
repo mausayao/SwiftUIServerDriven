@@ -10,16 +10,16 @@ import Foundation
 @MainActor
 class PetListViewModel: ObservableObject {
     
-    private var webService: WebService
+    private var webService: NetworkService
     @Published var components: [UIComponent] = []
     
-    init(webService: WebService) {
+    init(webService: NetworkService) {
         self.webService = webService
     }
     
     func load() async {
         do {
-            let screenModel = try await webService.load(resource: Constants.Urls.petListing)
+            let screenModel = try await webService.load(Constants.ScreenResources.petListing)
             components = try screenModel.buildComponent()
         } catch {
             print(error)
