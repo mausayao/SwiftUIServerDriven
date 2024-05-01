@@ -9,11 +9,11 @@ import Foundation
 
 enum ComponentError: Error {
     case decodingError
-    case carousel
 }
 
 enum ComponentType: String, Decodable {
     case featuredImage
+    case carousel
 }
 
 struct ComponentModel: Decodable {
@@ -54,6 +54,12 @@ extension ScreenModel {
                 }
                 
                 uiComponents.append(FeaturedImageComponent(uiModel: uiModel))
+            case .carousel:
+                guard let uiModel: CarouselUIModel = component.data.decode() else {
+                    throw ComponentError.decodingError
+                }
+                
+                uiComponents.append(CarouselComponent(uiModel: uiModel))
             }
         }
         

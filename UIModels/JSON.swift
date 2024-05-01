@@ -46,7 +46,7 @@ struct JSON: Decodable {
             } else if let boolValue = try? container.decode(Bool.self) {
                 value = boolValue
             } else if let arrayValue = try? container.decode([JSON].self) {
-                value = arrayValue
+                value = arrayValue.map({ $0.value })
             } else {
                 throw DecodingError.dataCorruptedError
             }
