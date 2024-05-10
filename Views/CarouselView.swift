@@ -15,20 +15,18 @@ struct CarouselView: View {
     var body: some View {
         ScrollView(.horizontal) {
             HStack {
-                ForEach(uiModel.imageUrls, id: \.self) { url in
-                    AsyncImage(url: url) { imaage in
-                        imaage
-                            .resizable()
-                            .frame(width: 200, height: 200)
-                    } placeholder: {
-                        ProgressView()
-                    }.toAnyView()
+                ForEach(uiModel.items) { item in
+                    Navigator.perform(action: uiModel.action, payload: item) {
+                        AsyncImage(url: item.imageUrl) { imaage in
+                            imaage
+                                .resizable()
+                                .frame(width: 200, height: 200)
+                        } placeholder: {
+                            ProgressView()
+                        }.toAnyView()
+                    }
                 }
             }
         }
     }
-}
-
-#Preview {
-    CarouselView(uiModel: .init(imageUrls: []))
 }
