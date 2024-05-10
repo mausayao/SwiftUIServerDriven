@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00AB8D82BE9C231000F0D12 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00AB8D72BE9C231000F0D12 /* Navigator.swift */; };
 		B00CBAD52BD9DFCF006309F9 /* SwiftUIServerDrivenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00CBAD42BD9DFCF006309F9 /* SwiftUIServerDrivenApp.swift */; };
 		B00CBAD72BD9DFCF006309F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00CBAD62BD9DFCF006309F9 /* ContentView.swift */; };
 		B00CBAD92BD9DFD0006309F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00CBAD82BD9DFD0006309F9 /* Assets.xcassets */; };
@@ -15,6 +16,8 @@
 		B016A48F2BE2DBBF00BDEC40 /* CarouselUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016A48E2BE2DBBF00BDEC40 /* CarouselUIModel.swift */; };
 		B016A4912BE2DC1E00BDEC40 /* CarouselComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016A4902BE2DC1E00BDEC40 /* CarouselComponent.swift */; };
 		B016A4942BE2DE1900BDEC40 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016A4932BE2DE1900BDEC40 /* CarouselView.swift */; };
+		B016A4972BE46E3E00BDEC40 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016A4962BE46E3E00BDEC40 /* Route.swift */; };
+		B016A49A2BE46EC100BDEC40 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B016A4992BE46EC100BDEC40 /* Action.swift */; };
 		B03BBE602BDC82F100333ACE /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03BBE5F2BDC82F100333ACE /* WebService.swift */; };
 		B03BBE632BDC833200333ACE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03BBE622BDC833200333ACE /* Constants.swift */; };
 		B03BBE662BDC8A4400333ACE /* ScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03BBE652BDC8A4400333ACE /* ScreenModel.swift */; };
@@ -30,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B00AB8D72BE9C231000F0D12 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		B00CBAD12BD9DFCF006309F9 /* SwiftUIServerDriven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIServerDriven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00CBAD42BD9DFCF006309F9 /* SwiftUIServerDrivenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIServerDrivenApp.swift; sourceTree = "<group>"; };
 		B00CBAD62BD9DFCF006309F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		B016A48E2BE2DBBF00BDEC40 /* CarouselUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselUIModel.swift; sourceTree = "<group>"; };
 		B016A4902BE2DC1E00BDEC40 /* CarouselComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselComponent.swift; sourceTree = "<group>"; };
 		B016A4932BE2DE1900BDEC40 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		B016A4962BE46E3E00BDEC40 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		B016A4992BE46EC100BDEC40 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		B03BBE5F2BDC82F100333ACE /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		B03BBE622BDC833200333ACE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B03BBE652BDC8A4400333ACE /* ScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenModel.swift; sourceTree = "<group>"; };
@@ -83,6 +89,8 @@
 		B00CBAD32BD9DFCF006309F9 /* SwiftUIServerDriven */ = {
 			isa = PBXGroup;
 			children = (
+				B016A4982BE46E9900BDEC40 /* Actions */,
+				B016A4952BE46E1D00BDEC40 /* Navigation */,
 				B016A4922BE2DE0100BDEC40 /* Views */,
 				B084B31D2BE1C06200ADAF9D /* Mock */,
 				B084B3182BE119AF00ADAF9D /* ViewModels */,
@@ -113,6 +121,23 @@
 				B016A4932BE2DE1900BDEC40 /* CarouselView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B016A4952BE46E1D00BDEC40 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B016A4962BE46E3E00BDEC40 /* Route.swift */,
+				B00AB8D72BE9C231000F0D12 /* Navigator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		B016A4982BE46E9900BDEC40 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				B016A4992BE46EC100BDEC40 /* Action.swift */,
+			);
+			path = Actions;
 			sourceTree = "<group>";
 		};
 		B03BBE5E2BDC82D700333ACE /* Services */ = {
@@ -251,6 +276,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B084B3222BE1C17A00ADAF9D /* LocalService.swift in Sources */,
+				B00AB8D82BE9C231000F0D12 /* Navigator.swift in Sources */,
+				B016A49A2BE46EC100BDEC40 /* Action.swift in Sources */,
 				B084B3242BE27B2000ADAF9D /* JSON.swift in Sources */,
 				B03BBE602BDC82F100333ACE /* WebService.swift in Sources */,
 				B016A4912BE2DC1E00BDEC40 /* CarouselComponent.swift in Sources */,
@@ -259,6 +286,7 @@
 				B084B3122BE0854C00ADAF9D /* FeaturedImageComponent.swift in Sources */,
 				B016A4942BE2DE1900BDEC40 /* CarouselView.swift in Sources */,
 				B084B31A2BE119CD00ADAF9D /* PetListViewModel.swift in Sources */,
+				B016A4972BE46E3E00BDEC40 /* Route.swift in Sources */,
 				B03BBE662BDC8A4400333ACE /* ScreenModel.swift in Sources */,
 				B00CBAD72BD9DFCF006309F9 /* ContentView.swift in Sources */,
 				B016A48F2BE2DBBF00BDEC40 /* CarouselUIModel.swift in Sources */,
