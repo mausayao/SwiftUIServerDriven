@@ -9,6 +9,6 @@ import Foundation
 import SwiftUI
 
 protocol UIComponent {
-    var id: String { get }
+    var id: UUID { get }
     func render() -> AnyView
 }

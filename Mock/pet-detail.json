@@ -1,0 +1,23 @@
+{
+    "pageTitle": "Pet Detail",
+    "components": [
+        {
+            "type": "featuredImage",
+            "data": {
+                "imageUrl": "https://images.unsplash.com/photo-1589883661923-6476cb0ae9f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80"
+            }
+        },
+        {
+            "type": "textRow",
+            "data": {
+                "text": "All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet."
+            }
+        },
+        {
+            "type": "rating",
+            "data": {
+                "value": 3
+            }
+        }
+    ]
+}

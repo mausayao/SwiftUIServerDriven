@@ -13,14 +13,18 @@ struct Constants {
         static let baseUrl = "localhost:3000"
         static let petListing = "pet-listing"
         
+        static func petDetail(petId: Int) -> String {
+            return "pet-detail/\(petId)"
+        }
+        
         static func resource(for resourceName: String) -> URL? {
-            var component = URLComponents()
+            var components: URLComponents = URLComponents()
+            components.scheme = "http"
+            components.path = "/\(resourceName)"
+            components.port = 3000
+            components.encodedHost = "localhost"
             
-            component.scheme = "http"
-            component.encodedHost = baseUrl
-            component.path = "/\(resourceName)"
-            
-            return component.url
+            return components.url
         }
     }
 }
