@@ -13,12 +13,13 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
+            List {
                 ForEach(viewModel.components, id: \.id) { component in
                     component.render()
                 }
                 .navigationTitle("Pets")
-            }.task {
+            }.listStyle(.plain)
+            .task {
                await viewModel.load()
             }
         }
