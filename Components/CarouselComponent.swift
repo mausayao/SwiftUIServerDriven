@@ -12,9 +12,7 @@ struct CarouselComponent: UIComponent {
     
     let uiModel: CarouselUIModel
     
-    var id: String {
-        ComponentType.carousel.rawValue
-    }
+    var id = UUID()
     
     func render() -> AnyView {
         CarouselView(uiModel: uiModel).toAnyView()

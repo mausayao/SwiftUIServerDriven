@@ -30,6 +30,14 @@
 		B084B3202BE1C13C00ADAF9D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B084B31F2BE1C13C00ADAF9D /* NetworkService.swift */; };
 		B084B3222BE1C17A00ADAF9D /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B084B3212BE1C17A00ADAF9D /* LocalService.swift */; };
 		B084B3242BE27B2000ADAF9D /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B084B3232BE27B2000ADAF9D /* JSON.swift */; };
+		B0CBCDB42BEEEF4E0033D69F /* PetDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCDB32BEEEF4E0033D69F /* PetDetailScreen.swift */; };
+		B0CBCDB62BEEF07B0033D69F /* PetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCDB52BEEF07B0033D69F /* PetDetailViewModel.swift */; };
+		B0CBCDB82BEFBB9A0033D69F /* TextRowUiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCDB72BEFBB9A0033D69F /* TextRowUiModel.swift */; };
+		B0CBCDBA2BEFBC370033D69F /* TextRowComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCDB92BEFBC370033D69F /* TextRowComponent.swift */; };
+		B0CBCDBC2BEFC0D80033D69F /* RatingRowUiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCDBB2BEFC0D80033D69F /* RatingRowUiModel.swift */; };
+		B0CBCDBE2BEFC1060033D69F /* RatingRowComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCDBD2BEFC1060033D69F /* RatingRowComponent.swift */; };
+		B0CBCDC02BEFC3430033D69F /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCDBF2BEFC3430033D69F /* RatingView.swift */; };
+		B0CBCDC22BEFC6AD0033D69F /* pet-detail.json in Resources */ = {isa = PBXBuildFile; fileRef = B0CBCDC12BEFC5450033D69F /* pet-detail.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +65,14 @@
 		B084B31F2BE1C13C00ADAF9D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B084B3212BE1C17A00ADAF9D /* LocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
 		B084B3232BE27B2000ADAF9D /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		B0CBCDB32BEEEF4E0033D69F /* PetDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailScreen.swift; sourceTree = "<group>"; };
+		B0CBCDB52BEEF07B0033D69F /* PetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetailViewModel.swift; sourceTree = "<group>"; };
+		B0CBCDB72BEFBB9A0033D69F /* TextRowUiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRowUiModel.swift; sourceTree = "<group>"; };
+		B0CBCDB92BEFBC370033D69F /* TextRowComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRowComponent.swift; sourceTree = "<group>"; };
+		B0CBCDBB2BEFC0D80033D69F /* RatingRowUiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingRowUiModel.swift; sourceTree = "<group>"; };
+		B0CBCDBD2BEFC1060033D69F /* RatingRowComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingRowComponent.swift; sourceTree = "<group>"; };
+		B0CBCDBF2BEFC3430033D69F /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		B0CBCDC12BEFC5450033D69F /* pet-detail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "pet-detail.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +105,7 @@
 		B00CBAD32BD9DFCF006309F9 /* SwiftUIServerDriven */ = {
 			isa = PBXGroup;
 			children = (
+				B0CBCDB22BEEEF390033D69F /* Screen */,
 				B016A4982BE46E9900BDEC40 /* Actions */,
 				B016A4952BE46E1D00BDEC40 /* Navigation */,
 				B016A4922BE2DE0100BDEC40 /* Views */,
@@ -119,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				B016A4932BE2DE1900BDEC40 /* CarouselView.swift */,
+				B0CBCDBF2BEFC3430033D69F /* RatingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -165,6 +183,8 @@
 				B084B3132BE0860600ADAF9D /* FeaturedImageUIModel.swift */,
 				B084B3232BE27B2000ADAF9D /* JSON.swift */,
 				B016A48E2BE2DBBF00BDEC40 /* CarouselUIModel.swift */,
+				B0CBCDB72BEFBB9A0033D69F /* TextRowUiModel.swift */,
+				B0CBCDBB2BEFC0D80033D69F /* RatingRowUiModel.swift */,
 			);
 			path = UIModels;
 			sourceTree = "<group>";
@@ -175,6 +195,8 @@
 				B084B30F2BE0840B00ADAF9D /* UIComponent.swift */,
 				B084B3112BE0854C00ADAF9D /* FeaturedImageComponent.swift */,
 				B016A4902BE2DC1E00BDEC40 /* CarouselComponent.swift */,
+				B0CBCDB92BEFBC370033D69F /* TextRowComponent.swift */,
+				B0CBCDBD2BEFC1060033D69F /* RatingRowComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -192,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				B084B3192BE119CD00ADAF9D /* PetListViewModel.swift */,
+				B0CBCDB52BEEF07B0033D69F /* PetDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -200,8 +223,17 @@
 			isa = PBXGroup;
 			children = (
 				B084B31E2BE1C08B00ADAF9D /* pet-listing.json */,
+				B0CBCDC12BEFC5450033D69F /* pet-detail.json */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		B0CBCDB22BEEEF390033D69F /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B0CBCDB32BEEEF4E0033D69F /* PetDetailScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0CBCDC22BEFC6AD0033D69F /* pet-detail.json in Resources */,
 				B00CBADC2BD9DFD0006309F9 /* Preview Assets.xcassets in Resources */,
 				B016A48D2BE2844400BDEC40 /* pet-listing.json in Resources */,
 				B00CBAD92BD9DFD0006309F9 /* Assets.xcassets in Resources */,
@@ -276,12 +309,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B084B3222BE1C17A00ADAF9D /* LocalService.swift in Sources */,
+				B0CBCDBA2BEFBC370033D69F /* TextRowComponent.swift in Sources */,
 				B00AB8D82BE9C231000F0D12 /* Navigator.swift in Sources */,
+				B0CBCDC02BEFC3430033D69F /* RatingView.swift in Sources */,
 				B016A49A2BE46EC100BDEC40 /* Action.swift in Sources */,
+				B0CBCDBC2BEFC0D80033D69F /* RatingRowUiModel.swift in Sources */,
 				B084B3242BE27B2000ADAF9D /* JSON.swift in Sources */,
 				B03BBE602BDC82F100333ACE /* WebService.swift in Sources */,
 				B016A4912BE2DC1E00BDEC40 /* CarouselComponent.swift in Sources */,
 				B084B3172BE0877C00ADAF9D /* View+Extensions.swift in Sources */,
+				B0CBCDB62BEEF07B0033D69F /* PetDetailViewModel.swift in Sources */,
 				B084B3102BE0840B00ADAF9D /* UIComponent.swift in Sources */,
 				B084B3122BE0854C00ADAF9D /* FeaturedImageComponent.swift in Sources */,
 				B016A4942BE2DE1900BDEC40 /* CarouselView.swift in Sources */,
@@ -291,10 +328,13 @@
 				B00CBAD72BD9DFCF006309F9 /* ContentView.swift in Sources */,
 				B016A48F2BE2DBBF00BDEC40 /* CarouselUIModel.swift in Sources */,
 				B00CBAD52BD9DFCF006309F9 /* SwiftUIServerDrivenApp.swift in Sources */,
+				B0CBCDB42BEEEF4E0033D69F /* PetDetailScreen.swift in Sources */,
 				B03BBE632BDC833200333ACE /* Constants.swift in Sources */,
 				B084B3142BE0860600ADAF9D /* FeaturedImageUIModel.swift in Sources */,
 				B084B3202BE1C13C00ADAF9D /* NetworkService.swift in Sources */,
+				B0CBCDBE2BEFC1060033D69F /* RatingRowComponent.swift in Sources */,
 				B084B31C2BE11C4B00ADAF9D /* Dictionary+Extensions.swift in Sources */,
+				B0CBCDB82BEFBB9A0033D69F /* TextRowUiModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
