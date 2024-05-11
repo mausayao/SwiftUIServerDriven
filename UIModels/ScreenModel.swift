@@ -16,10 +16,11 @@ enum ComponentType: String, Decodable {
     case carousel
     case textRow
     case rating
+    case list
 }
 
 struct ComponentModel: Decodable {
-    let type: ComponentType
+    let type: ComponentType?
     let data: [String: Any]
     
     enum CodingKeys: CodingKey {
@@ -29,7 +30,7 @@ struct ComponentModel: Decodable {
     
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.type = try container.decode(ComponentType.self, forKey: .type)
+        self.type = try? container.decode(ComponentType.self, forKey: .type)
         
         guard let data = try container.decode(JSON.self, forKey: .data).value as? [String: Any] else {
             throw ComponentError.decodingError
@@ -75,6 +76,15 @@ extension ScreenModel {
                 }
                 
                 uiComponents.append(RatingRowComponent(uiModel: uiModel))
+                
+            case .list:
+                guard let uiModel: ListUiModel = component.data.decode() else {
+                    throw ComponentError.decodingError
+                }
+                
+                uiComponents.append(ListComponent(uiModel: uiModel))
+            case .none:
+                uiComponents.append(EmptyComponent())
             }
         }
         

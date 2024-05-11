@@ -38,6 +38,10 @@
 		B0CBCDBE2BEFC1060033D69F /* RatingRowComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCDBD2BEFC1060033D69F /* RatingRowComponent.swift */; };
 		B0CBCDC02BEFC3430033D69F /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCDBF2BEFC3430033D69F /* RatingView.swift */; };
 		B0CBCDC22BEFC6AD0033D69F /* pet-detail.json in Resources */ = {isa = PBXBuildFile; fileRef = B0CBCDC12BEFC5450033D69F /* pet-detail.json */; };
+		B0CBCDC42BEFCF5A0033D69F /* ListUiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCDC32BEFCF5A0033D69F /* ListUiModel.swift */; };
+		B0CBCDC62BEFD0B40033D69F /* ListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCDC52BEFD0B40033D69F /* ListComponent.swift */; };
+		B0CBCDC82BEFD1500033D69F /* RowComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCDC72BEFD1500033D69F /* RowComponent.swift */; };
+		B0CBCDCA2BEFE5630033D69F /* EmptyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CBCDC92BEFE5630033D69F /* EmptyComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +77,10 @@
 		B0CBCDBD2BEFC1060033D69F /* RatingRowComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingRowComponent.swift; sourceTree = "<group>"; };
 		B0CBCDBF2BEFC3430033D69F /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		B0CBCDC12BEFC5450033D69F /* pet-detail.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "pet-detail.json"; sourceTree = "<group>"; };
+		B0CBCDC32BEFCF5A0033D69F /* ListUiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUiModel.swift; sourceTree = "<group>"; };
+		B0CBCDC52BEFD0B40033D69F /* ListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListComponent.swift; sourceTree = "<group>"; };
+		B0CBCDC72BEFD1500033D69F /* RowComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowComponent.swift; sourceTree = "<group>"; };
+		B0CBCDC92BEFE5630033D69F /* EmptyComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +193,7 @@
 				B016A48E2BE2DBBF00BDEC40 /* CarouselUIModel.swift */,
 				B0CBCDB72BEFBB9A0033D69F /* TextRowUiModel.swift */,
 				B0CBCDBB2BEFC0D80033D69F /* RatingRowUiModel.swift */,
+				B0CBCDC32BEFCF5A0033D69F /* ListUiModel.swift */,
 			);
 			path = UIModels;
 			sourceTree = "<group>";
@@ -197,6 +206,9 @@
 				B016A4902BE2DC1E00BDEC40 /* CarouselComponent.swift */,
 				B0CBCDB92BEFBC370033D69F /* TextRowComponent.swift */,
 				B0CBCDBD2BEFC1060033D69F /* RatingRowComponent.swift */,
+				B0CBCDC52BEFD0B40033D69F /* ListComponent.swift */,
+				B0CBCDC72BEFD1500033D69F /* RowComponent.swift */,
+				B0CBCDC92BEFE5630033D69F /* EmptyComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -316,10 +328,12 @@
 				B0CBCDBC2BEFC0D80033D69F /* RatingRowUiModel.swift in Sources */,
 				B084B3242BE27B2000ADAF9D /* JSON.swift in Sources */,
 				B03BBE602BDC82F100333ACE /* WebService.swift in Sources */,
+				B0CBCDC82BEFD1500033D69F /* RowComponent.swift in Sources */,
 				B016A4912BE2DC1E00BDEC40 /* CarouselComponent.swift in Sources */,
 				B084B3172BE0877C00ADAF9D /* View+Extensions.swift in Sources */,
 				B0CBCDB62BEEF07B0033D69F /* PetDetailViewModel.swift in Sources */,
 				B084B3102BE0840B00ADAF9D /* UIComponent.swift in Sources */,
+				B0CBCDCA2BEFE5630033D69F /* EmptyComponent.swift in Sources */,
 				B084B3122BE0854C00ADAF9D /* FeaturedImageComponent.swift in Sources */,
 				B016A4942BE2DE1900BDEC40 /* CarouselView.swift in Sources */,
 				B084B31A2BE119CD00ADAF9D /* PetListViewModel.swift in Sources */,
@@ -327,7 +341,9 @@
 				B03BBE662BDC8A4400333ACE /* ScreenModel.swift in Sources */,
 				B00CBAD72BD9DFCF006309F9 /* ContentView.swift in Sources */,
 				B016A48F2BE2DBBF00BDEC40 /* CarouselUIModel.swift in Sources */,
+				B0CBCDC42BEFCF5A0033D69F /* ListUiModel.swift in Sources */,
 				B00CBAD52BD9DFCF006309F9 /* SwiftUIServerDrivenApp.swift in Sources */,
+				B0CBCDC62BEFD0B40033D69F /* ListComponent.swift in Sources */,
 				B0CBCDB42BEEEF4E0033D69F /* PetDetailScreen.swift in Sources */,
 				B03BBE632BDC833200333ACE /* Constants.swift in Sources */,
 				B084B3142BE0860600ADAF9D /* FeaturedImageUIModel.swift in Sources */,
